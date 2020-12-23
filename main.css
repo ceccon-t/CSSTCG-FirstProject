@@ -58,3 +58,9 @@ body {
     display: inline-block;
 }
 
+.main-nav__item a {
+    color: #0e4f1f;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
