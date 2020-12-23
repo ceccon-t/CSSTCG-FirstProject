@@ -29,11 +29,7 @@ body {
     padding: 8px 16px;
 }
 
-.main-nav__item {
-    display: inline-block;
-}
-
-.main-nav__items {
+.main-header > div {
     display: inline-block;
 }
 
@@ -41,7 +37,7 @@ body {
     display: inline-block;
 }
 
-.main-title {
+.main-nav__item {
     display: inline-block;
 }
 
