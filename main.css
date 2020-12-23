@@ -33,3 +33,15 @@ body {
     display: inline-block;
 }
 
+.main-nav__items {
+    display: inline-block;
+}
+
+.main-nav {
+    display: inline-block;
+}
+
+.main-title {
+    display: inline-block;
+}
+
