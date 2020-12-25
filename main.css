@@ -15,8 +15,13 @@
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
+    /* FROM EXERCISE
     position: relative;
     top: 85%;
+    left: 5%; */
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
 }
 
 .plan__list {
