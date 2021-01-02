@@ -8,7 +8,10 @@ let mobileNav = document.querySelector('.mobile-nav');
 let closeModal = () => {
     // modal.style.display = 'none';
     // backdrop.style.display = 'none';
-    modal.classList.remove('open');
+
+    if (modal) {
+        modal.classList.remove('open');
+    }
     backdrop.classList.remove('open');
 };
 
@@ -26,7 +29,10 @@ backdrop.addEventListener('click', () => {
     mobileNav.classList.remove('open');
     closeModal();
 });
-modalNoButton.addEventListener('click', closeModal);
+
+if (modalNoButton) {
+    modalNoButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', () => {
     // mobileNav.style.display = 'block';
