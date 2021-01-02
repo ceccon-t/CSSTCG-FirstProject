@@ -6,24 +6,31 @@ let toggleButton = document.querySelector('.toggle-button');
 let mobileNav = document.querySelector('.mobile-nav');
 
 let closeModal = () => {
-    modal.style.display = 'none';
-    backdrop.style.display = 'none';
+    // modal.style.display = 'none';
+    // backdrop.style.display = 'none';
+    modal.classList.remove('open');
+    backdrop.classList.remove('open');
 };
 
 for (let i = 0; i < selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', () => {
-        modal.style.display = 'block';
-        backdrop.style.display = 'block';
+        // modal.style.display = 'block';
+        // backdrop.style.display = 'block';
+        modal.classList.add('open');
+        backdrop.classList.add('open');
     });
 }
 
 backdrop.addEventListener('click', () => {
-    mobileNav.style.display = 'none';
+    // mobileNav.style.display = 'none';
+    mobileNav.classList.remove('open');
     closeModal();
 });
 modalNoButton.addEventListener('click', closeModal);
 
 toggleButton.addEventListener('click', () => {
-    mobileNav.style.display = 'block';
-    backdrop.style.display = 'block';
+    // mobileNav.style.display = 'block';
+    // backdrop.style.display = 'block';
+    mobileNav.classList.add('open');
+    backdrop.classList.add('open');
 })
