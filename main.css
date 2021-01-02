@@ -145,9 +145,7 @@
 }
 
 .key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
 }
 
 .key-feature__image {
@@ -161,10 +159,22 @@
 }
 
 .key-feature__description {
-    text-align: center;
     font-weight: bold;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+    
+    .key-feature__description {
+        text-align: center;
+        font-size: 1.25rem;
+    }
 }
 
 .modal {
