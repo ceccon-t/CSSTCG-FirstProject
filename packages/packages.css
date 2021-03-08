@@ -81,6 +81,10 @@ main {
     overflow: hidden;
 }
 
+.package:hover {
+    animation: push-up 0.5s forwards;
+}
+
 .package:hover,
 .package:active {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -177,5 +181,17 @@ main {
     #free:hover,
     #free:active {
         border-right-color: #ff5454;
+    }
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(-1rem);
     }
 }
