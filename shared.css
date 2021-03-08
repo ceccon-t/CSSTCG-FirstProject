@@ -169,7 +169,6 @@ main {
 }
 
 .mobile-nav {
-    display: none;
     position: fixed;
     z-index: 101;
     top: 0;
@@ -177,6 +176,9 @@ main {
     background: white;
     width: 80%;
     height: 100vh;
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: opacity 0.3s, transform 0.5s;
 }
 
 .mobile-nav__items {
