@@ -4,6 +4,7 @@ let modalNoButton = document.querySelector('.modal__action--negative');
 let selectPlanButtons = document.querySelectorAll('.plan button');
 let toggleButton = document.querySelector('.toggle-button');
 let mobileNav = document.querySelector('.mobile-nav');
+let ctaButton = document.querySelector('.main-nav__item--cta');
 
 let closeModal = () => {
     // modal.style.display = 'none';
@@ -48,4 +49,16 @@ toggleButton.addEventListener('click', () => {
     setTimeout(function() {
         backdrop.classList.add('open');
     }, 10);
-})
+});
+
+ctaButton.addEventListener('animationstart', function () {
+    console.log('Animation started', event);
+});
+
+ctaButton.addEventListener('animationended', function () {
+    console.log('Animation ended', event);
+});
+
+ctaButton.addEventListener('animationiteration', function () {
+    console.log('Animation iteration', event);
+});
